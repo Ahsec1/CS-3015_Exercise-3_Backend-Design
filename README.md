@@ -1,7 +1,7 @@
 # Backend Design with Node.Js & Express
 ## Description:
 
-This repository is a simple backend exercise program with the follownig features and middlewares:
+This repository is a simple backend exercise program using **Mock database Model**, **JOI**, and **TokenAuth** with the follownig features and middlewares:
 
 ## Features
 - **User Registration**
