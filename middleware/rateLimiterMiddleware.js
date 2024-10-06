@@ -1,17 +1,12 @@
 const rateLimit = require('express-rate-limit');
 
 const rateLimiterMiddleware = rateLimit({
-    windowMs: 1 * 10 * 1000, //10 seconds
-    max: 5, //maximum of 5 requests
+    windowMs: 1 * 60 * 1000, // 1 minute
+    max: 5, // Limit each IP to 5 requests per windowMs
     message: {
-        error: 'Too many requests. Please try again later' //message for number request exceeds limit
+        error: 'Too many requests. Please try again later',
     },
-    headers: true, 
-    // Custom handler for rate limit exceeded
-    handler: (req, res, next, options) => {
-        res.setHeader('Retry-After', 60); 
-        res.status(options.statusCode).send(options.message);
-    },
+    headers: true,
 });
 
 module.exports = rateLimiterMiddleware;

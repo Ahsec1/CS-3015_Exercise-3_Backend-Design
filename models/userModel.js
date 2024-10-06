@@ -15,7 +15,7 @@ const getUsers = () => {
 };
 
 hashPasswords().catch(err => {
-    console.error("Error hashing passwords:", err); //error message when hasing fails
+    console.error("Error hashing passwords:", err); //error message when hashing fails
 });
 
 module.exports = {
