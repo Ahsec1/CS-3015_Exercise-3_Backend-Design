@@ -6,5 +6,4 @@ const sequelize = new Sequelize("testdb", "root", "admin$", {
     dialectModule: require('mysql2')
 });
 
-
 module.exports = sequelize;
