@@ -31,7 +31,7 @@ JWT_SECRET=your_jwt_secret
 ### POST Register
 
 ```bash
-http://localhost:<port>/routes/Register
+http://localhost:3000/routes/Register
 ```
 
 ```bash
@@ -45,7 +45,7 @@ http://localhost:<port>/routes/Register
 ### POST Login
 
 ```bash
-http://localhost:<port>/routes/Login
+http://localhost:3000/routes/Login
 ```
 
 ```bash
@@ -58,7 +58,7 @@ http://localhost:<port>/routes/Login
 ### GET User Profile
 
 ```bash
-http://localhost:<port>/routes/UserProfile
+http://localhost:3000/routes/UserProfile
 ```
 
 ```bash
@@ -71,5 +71,5 @@ Value: Bearer <your-jwt-token>
 ### GET Current Users
 
 ```bash
-http://localhost:<port>/routes/UsersData
+http://localhost:3000/routes/UsersData
 ```
