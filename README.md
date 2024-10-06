@@ -19,7 +19,7 @@ This repository is a simple backend exercise program with the follownig features
 
 ## .enf file 
 ```javascript
-PORT=5000
+PORT=4000
 JWT_SECRET=your_jwt_secret
 ```
 
