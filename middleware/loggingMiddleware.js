@@ -3,11 +3,12 @@ const morganFormat = morgan('dev');
 
 const loggingMiddleware = (req, res, next) => {
     
+    //use morgan to log the request details before going to the next middleware
     morganFormat(req, res, () => {
         const timestamp = new Date().toISOString();
         const method = req.method;
         const route = req.originalUrl;
-
+        
         console.log('\n=============================');
         console.log(`[${timestamp}] ${method} request to ${route}`);
         console.log(`Headers: ${JSON.stringify(req.headers, null, 2)}`);
@@ -20,7 +21,7 @@ const loggingMiddleware = (req, res, next) => {
 
         console.log('=============================\n');
 
-        next();
+        next(); //if log successful it goes to the next middleware
     });
 };
 
