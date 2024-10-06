@@ -1,7 +1,7 @@
 # Backend Design with Node.Js & Express
 ## Description:
 
-This repository is a simple backend exercise program with the follownig features and middlewares:
+This repository is a simple backend exercise program using **Mock database Model**, **JOI**, and **TokenAuth** with the follownig features and middlewares:
 
 ## Features
 - **User Registration**
@@ -25,3 +25,51 @@ JWT_SECRET=your_jwt_secret
 
 ## Run App
 ```npm run dev or npm start```
+
+## API TESTS FOR POSTMAN
+
+### POST Register
+
+```bash
+http://localhost:3000/routes/Register
+```
+
+```bash
+{
+"username":"Vladimir Putin",
+"password":"Putina@gmail.com",
+"email":"AllHailHydra"
+}
+```
+
+### POST Login
+
+```bash
+http://localhost:3000/routes/Login
+```
+
+```bash
+{
+"username":"josemariachan@gmail.com",
+"password":"merrychristmasandhappynewyear"
+}
+```
+
+### GET User Profile
+
+```bash
+http://localhost:3000/routes/UserProfile
+```
+
+```bash
+POSTMAN
+Headers
+Key: Authorization
+Value: Bearer <your-jwt-token>
+```
+
+### GET Current Users
+
+```bash
+http://localhost:3000/routes/UsersData
+```
