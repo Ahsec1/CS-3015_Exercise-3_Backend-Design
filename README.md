@@ -63,8 +63,9 @@ http://localhost:<port>/routes/UserProfile
 
 ```bash
 POSTMAN
-Header:
-Authorization: Bearer <your-jwt-token>
+Headers
+Key: Authorization
+Value: Bearer <your-jwt-token>
 ```
 
 ### GET Current Users
